@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            overflow: hidden;
+            background-image: linear-gradient(to bottom, #a0f9f1, #8cf8cb, #a0f193, #cae352, #ffcb00);
+            
+        }
+.tree{
+    height: 600px;
+    background-image: url(images/tree.png);
+    background-size: 900px 900px;
+    background-repeat: no-repeat;
+    background-position: left;
+    /* background-attachment: fixed; */
+
+}
+
+.leaf{
+    display: inline-block;
+  
+}
+.leaf1{
+    top: 0px;
+    animation: leaf1 infinite 10s linear;
+/* transition-timing-function:ease-out ; */
+
+}
+.leaf2{
+    top: 0px;
+    animation: leaf2 infinite 15s linear;
+/* transition-timing-function: ease-out; */
+
+}
+.leaf3{
+    top: 0px;
+    animation: leaf3 infinite 13s linear;
+/* transition-timing-function: ease-in; */
+
+}
+@keyframes leaf1 {
+      0%{
+        transform: translate(0px,0px);
+        /* transform:rotate(-20deg); */
+		}
+		100%{
+            transform: translate(100px, 900px) rotateZ(270deg);
+            /* transform: scale(30px); */
+		}
+}
+@keyframes leaf2 {
+    0%{
+        transform: translate(0px,0px);
+    /* transform: rotate(20deg); */
+
+	}
+	100%{
+        transform: translate(100px, 900px);
+	}
+}
+@keyframes leaf3 {
+       0%{
+        transform: translate(0px,0px);
+		}
+		100%{
+            transform: translate(100px, 900px);
+		}
+}
+    </style>
+</head>
+<body>
+    <div class="tree">
+<div class="leaf leaf1"><img src="images/leaf1.png" alt="error loading" width=400>  </div>
+<div class="leaf leaf3"><img src="images/leaf3.png" alt="error loading" width=400>  </div>
+<div class="leaf leaf2"><img src="images/leaf2.png" alt="error loading" width=400>  </div>
+<div class="leaf leaf3"><img src="images/leaf3.png" alt="error loading" width=400>  </div>    
+<div class="leaf leaf1"><img src="images/leaf1.png" alt="error loading" width=400>  </div>
+
+    </div>
+                 
+</body>                 
+</html>                 
